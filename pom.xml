@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>net.fghijk.maven.poms</groupId>
+	<artifactId>fghijk-root-pom-aggregator</artifactId>
+	<version>0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+	<name>FGHIJK Root POM Aggregator</name>
+	<description>Builds root POM projects</description>
+
+    <modules>
+        <module>fghijk-common-root-pom</module>
+        <module>fghijk-archetype-root-pom</module>
+        <module>fghijk-java-root-pom</module>
+        <module>fghijk-maven-plugin-root-pom</module>
+        <module>fghijk-rpm-root-pom</module>
+    </modules>
+</project>

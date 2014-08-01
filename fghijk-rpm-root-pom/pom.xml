@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>net.fghijk.maven.poms</groupId>
+        <artifactId>fghijk-common-root-pom</artifactId>
+        <version>0.1-SNAPSHOT</version>
+        <relativePath>../fghijk-common-root-pom/pom.xml</relativePath>
+    </parent>
+
+    <groupId>net.fghijk.maven.poms</groupId>
+    <artifactId>fghijk-rpm-root-pom</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>FGHIJK RPM POM</name>
+    <description>POM for an RPM package</description>
+
+    <properties>
+        <fghijk.repos.rpms>http://nexus.fghijk.net/content/repositories/rpms</fghijk.repos.rpms>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>net.fghijk.maven.plugins</groupId>
+                    <artifactId>fghijk-bash-plugin</artifactId>
+                    <version>0.1-SNAPSHOT</version>
+                </plugin>
+                <plugin>
+                    <groupId>net.fghijk.maven.plugins</groupId>
+                    <artifactId>fghijk-rpm-plugin</artifactId>
+                    <version>0.1-SNAPSHOT</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
